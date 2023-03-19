@@ -1,0 +1,107 @@
+﻿<!-- 这是 PCL2 的主页自定义文件。你可以通过修改这个文件来自定义 PCL2 主页：添加文本、打开网页、启动游戏，等等。
+     如果你倒腾这个文件把 PCL2 玩炸了，把这个文件直接删除就行了。
+     如果你懂得 WPF 的布局文件编写，你甚至可以做出不少的新玩意儿…… -->
+    
+<local:MyCard Title="服务器" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+		  <local:MyListItem Margin="-5,10,-5,0" 
+		                  Logo="https://bbs.wdsj.net/assets/favicon-7ragx1w2.png" Title="洛花星雨" Info="洛花星雨服务器为一个日常100~200人的大型服务器，节假日可达600人。" 
+		                  EventType="打开网页" EventData="https://bbs.wdsj.net/" Type="Clickable" />
+		  <local:MyListItem Margin="-5,10,-5,0" 
+		                  Logo="https://www.2b2t.xin/favicon.ico" Title="2b2t(中国版)" Info="2b2t(中国版)为一个类似于2b2t.org的同样无规则的服务器。在这里，具有黑暗森林法则。切勿暴露坐标！" 
+		                  EventType="打开网页" EventData="https://www.2b2t.xin/" Type="Clickable" />
+		  <local:MyListItem Margin="-5,10,-5,0" 
+		                  Logo="https://list.fansmc.com/favicon.ico" Title="WanMeiCraft" Info="本服为原创RPG。服内目前开放了十余个副本，后续会继续更新更多副本供大家游玩，副本目前分为 野外副本，单人副本，和团队副本。
+                      1.野外副本就是最简单的，大家应该都很清楚。
+                      2.单人副本则是单独给玩家创建一个世界，在该世界内完成挑战，当然你也可以选择组队进入，不过并不推荐，因为只会给击***的人奖励。
+                      3.团队则是需要大家集结力量组团前往的副本。这类副本难度一般较高，但是也不存在不氪金就打不过的情况，腐竹都是按照普通主线武器的正常标准制定难度的。
+                      除了以上几种副本，还有一种是每日副本，基本也是推荐单人挑战的。可以获得那些副本专属的奖励。建议每天都打
+                      服务器还有很多玩法，例如:宝石,强化,宠物,锻造等更多玩法无法一一道来，只能请您到服务器中进行体验拉！
+                      最后，我和服务器的小伙伴们期待您的加入！" 
+		                  EventType="打开网页" EventData="https://list.fansmc.com/2547.html" Type="Clickable" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="快捷进入服务器" CanSwap="True" IsSwaped="True" Margin="0,0,0,15">
+    <StackPanel Margin="25,40,23,15">
+		    <local:MyButton Margin="0,8,0,0" Width="250" Height="35"
+                 Text="进入2b2t服务器" EventType="启动游戏" EventData="1.12.2-Forge_14.23.5.2847-OptiFine_G5|2b2t.xin" ToolTip="服务器 IP：2b2t.xin" />
+        <local:MyButton Margin="0,8,0,0" Width="250" Height="35"
+                 Text="进入洛花星雨服务器" EventType="启动游戏" EventData="1.19.2-Forge_43.2.4-OptiFine_I1|Wdsj.net" ToolTip="服务器 IP：Wdsj.net" />
+    </StackPanel>
+</local:MyCard>
+    
+<local:MyCard Title="Wiki百科" CanSwap="True" IsSwaped="True" Margin="0,0,0,15">
+  <StackPanel Margin="25,40,23,15">
+	  <local:MyListItem Margin="-5,10,-5,0" Logo="https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/4a/Site-favicon.ico"
+                 Title="Minecraft Wiki" EventType="打开网页" EventData="https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki" Info="欢迎来到这个完全公开、可自由编辑的Wiki，中文Minecraft Wiki。这里致力于收集一切和Minecraft有关的信息。" />
+  </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="娱乐" CanSwap="True" IsSwaped="True" Margin="0,0,0,15">
+  <StackPanel Margin="25,40,23,15">
+	  <local:MyListItem Margin="-5,10,-5,0" Title="Bilibili" Logo="https://www.bilibili.com/favicon.ico" Info="欢迎来到B站awa" 
+		                  EventType="打开文件" EventData="./Play.xaml" Type="Clickable" />
+  </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="Mod查看" CanSwap="True" IsSwaped="True" Margin="0,0,0,15">
+  <StackPanel Margin="25,40,23,15">
+	  <local:MyButton Margin="0,8,0,0" Width="250" Height="35"
+                 Text="1.12.2 Mod 文件夹" EventType="打开文件" EventData="explorer.exe|E:\PCL2\.minecraft\versions\1.12.2-Forge_14.23.5.2847-OptiFine_G5\mods" ToolTip="1.12.2 Mod 文件夹" />
+	  <local:MyButton Margin="0,8,0,0" Width="250" Height="35"
+                 Text="1.19.2 Mod 文件夹" EventType="打开文件" EventData="explorer.exe|E:\PCL2\.minecraft\versions\1.19.2-Forge_43.2.4-OptiFine_I1\mods" ToolTip="1.19.2 Mod 文件夹" />
+	  <local:MyButton Margin="0,8,0,0" Width="250" Height="35"
+                 Text="1.19.3 Mod 文件夹" EventType="打开文件" EventData="explorer.exe|E:\PCL2\.minecraft\versions\1.19.3-Forge_44.1.0\mods" ToolTip="1.19.3 Mod 文件夹" />
+  </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="购买正版Minecraft" CanSwap="True" IsSwaped="False" Margin="0,0,0,15">
+  <StackPanel Margin="25,40,23,15">
+	  <local:MyHint Margin="0,8,0,2" IsWarn="False" Text="请支持正版！"/>
+    <local:MyButton Margin="0,8,0,0" Width="250" Height="35"
+                 Text="购买正版Minecraft" EventType="打开网页" EventData="https://www.minecraft.net/zh-hans/get-minecraft" ToolTip="前往Minecraft官网" ColorType="Red"/>
+  </StackPanel>
+</local:MyCard>
+
+
+    
+
+<!-- 
+
+全部通用的属性：
+ - Width、Height：设置宽度与高度
+ - ToolTip：设置鼠标指向时的提示文本
+ - Foreground：调整前景颜色（十六进制字符串，例如 #FF010203 代表 ARGB 中的 255,1,2,3。前两位代表不透明度，FF 为全不透明，00 为全透明）
+ - Background：调整背景颜色（使用类似 Background="{DynamicResource ColorBrush5}" 的格式以调用 PCL2 当前的主题颜色，修改末尾的数字编号以改变颜色浓度）
+ - Margin：调整外边距（格式为 左,上,右,下。例如 Margin="0,0,0,2" 即为 2 单位的下边距）
+ - HorizontalAlignment：设置对齐方式（Left、Center、Right）
+
+TextBlock（纯文本）：
+ - Text：设置显示的文本（如果要使用引号等特殊字符，自行百度 XAML 转义）
+ - TextWrapping：开启自动换行
+ - FontSize：设置字号
+ 
+Image（图片）：
+ - Source：要显示的图片的网址
+
+local:MyHint（提示条）：
+ - Text：设置显示的文本（&#xa; 代表换行）
+ - IsWarn：设置为 True 代表警告样式，False 代表提示样式
+ 
+local:MyButton（按钮）：
+ - Text：设置显示的文本
+ - Padding：设置内边距，格式与 Margin 一致
+ - ColorType：设置颜色主题（Highlight 为当前启动器的主题颜色，Red 为红色，默认为黑色）
+ - EventType、EventData：触发特定事件
+ 
+local:MyTextButton（文本按钮）：
+ - Text：设置显示的文本
+ - EventType、EventData：触发特定事件
+ 
+local:MyCard（卡片）：
+ - Title：设置显示的标题文本
+ - CanSwap：这张卡片是否可以折叠，True 为是，False 为否
+ - IsSwaped：这张卡片是否默认折叠，要求 CanSwap 必须为 True
+
+-->
